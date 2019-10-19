@@ -18,13 +18,18 @@
       background-position: 0 50%;
     }
   }
-  
-.html{
-    height: 100%;
-}
 .student {
+    padding-top: 30px;
+    margin: auto;
+    display: block;
+}
+.company {
+    padding-top: 40px;
+    margin: auto;
+    display: block;
+}
+.alumni {
     padding-top: 50px;
-    height: 100%;
     margin: auto;
     display: block;
 }
@@ -41,9 +46,33 @@ button {
     border: 0;
     color: #fff;
     background-image: linear-gradient(rgb(214, 154, 25), rgb(231, 186, 89));
-    padding: 12px 24px;
-    border-radius: 100px;
+    padding: 30px 45px;
+    border-radius: 100%;
     cursor: pointer;
     transition: 0.5s;
   }
-  
+
+  .bottombutton {
+    
+    margin: auto;
+    display: block;
+    border: 0;
+    color: #fff;
+    background-image: linear-gradient(rgb(214, 154, 25), rgb(231, 186, 89));
+    padding: 35px 24px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .companybutton {
+    
+    margin: auto;
+    display: block;
+    border: 0;
+    color: #fff;
+    background-image: linear-gradient(rgb(214, 154, 25), rgb(231, 186, 89));
+    padding: 30px 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
