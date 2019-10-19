@@ -6,7 +6,8 @@
      "age" : "25", 
      "grade" : "Junior", 
     "major" : "Computer Science", 
-    "job interest type" : "Internship" },
+    "job interest type" : "Internship",
+    "school" : "University of Michigan"},
     {"username": "JaneDoe", 
      "password": "123", 
      "status": "0", 
@@ -14,5 +15,6 @@
      "age" : "20", 
      "grade" : "Senior",
      "major" : "Computer Science", 
-     "job interest type" : "Full Time" }
+     "job interest type" : "Full Time",
+     "school" : "Ohio State University"}
 ]
