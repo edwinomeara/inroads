@@ -1,3 +1,18 @@
 [
-    {"name" : "John Doe", "age" : "25"},{"name" : "Jane Doe", "age" : "20"}
+    {"username": "JohnDoe", 
+     "password": "123", 
+     "status": "0",  
+     "name" : "John Doe", 
+     "age" : "25", 
+     "grade" : "Junior", 
+    "major" : "Computer Science", 
+    "job interest type" : "Internship" },
+    {"username": "JaneDoe", 
+     "password": "123", 
+     "status": "0", 
+     "name" : "Jane Doe", 
+     "age" : "20", 
+     "grade" : "Senior",
+     "major" : "Computer Science", 
+     "job interest type" : "Full Time" }
 ]
