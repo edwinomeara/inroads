@@ -1,11 +1,36 @@
 <body>
   <div class="container">
-    <ul class="progressbar">
-      <li class="active">Step 1</li>
-      <li>Step 2</li>
-      <li>Step 3</li>
-    </ul>
+    <div *ngIf="resumeSubmit">
+      <ul class="progressbar">
+        <li class="active">Submit Resume</li>
+        <li>Training Session</li>
+        <li>Mock Interview</li>
+        <li>Resume Approval</li>
+      </ul>
+    </div>
+    <div *ngIf="training">
+      <ul class="progressbar">
+        <li class="active">Submit Resume</li>
+        <li class="active">Training Session</li>
+        <li>Mock Interview</li>
+        <li>Resume Approval</li>
+      </ul>
+    </div>
+    <div *ngIf="interview">
+      <ul class="progressbar">
+        <li class="active">Submit Resume</li>
+        <li class="active">Training Session</li>
+        <li class="active">Mock Interview</li>
+        <li>Resume Approval</li>
+      </ul>
+    </div>
+    <div *ngIf="resumeApproval">
+      <ul class="progressbar">
+        <li class="active">Submit Resume</li>
+        <li class="active">Training Session</li>
+        <li class="active">Mock Interview</li>
+        <li class="active">Resume Approval</li>
+      </ul>
+    </div>
   </div>
-
-
 </body>

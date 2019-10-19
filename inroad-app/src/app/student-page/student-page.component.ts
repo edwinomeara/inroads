@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student-page.component.css']
 })
 export class StudentPageComponent implements OnInit {
+  resumeSubmit = true;
+  training = false;
+  interview = false;
+  resumeApproval = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
