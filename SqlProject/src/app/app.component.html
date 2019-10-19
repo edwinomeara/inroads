@@ -1,2 +1,11 @@
-<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
-<page-router-outlet></page-router-outlet>
+<ActionBar title="SQL App">
+    <ActionItem text="Add" ios.position="right" (tap)="insert()"></ActionItem>
+    <ActionItem text="Refresh" ios.position="left" (tap)="fetch()"></ActionItem>
+</ActionBar>
+<StackLayout>
+    <ListView [items]="people">
+        <template let-person="item">
+            <Label text="{{ person.firstname }} {{ person.lastname }}"></Label>
+        </template>
+    </ListView>
+</StackLayout>
