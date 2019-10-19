@@ -1,5 +1,33 @@
+<section></section>
+
 <body>
+  <!--If the user has not completed anything-->
   <div class="container">
+    <div *ngIf="isNew">
+      <ul class="progressbar">
+        <li>Upload Resume</li>
+        <li>Training Session</li>
+        <li>Mock Interview</li>
+        <li>Resume Approval</li>
+      </ul>
+
+      <div>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Add Comments</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div>
+            <label for="file">Choose File</label>
+          </div>
+          <input type="file" id="file">
+        </div>
+        <button (click)=onResumeSubmit()>submit</button>
+      </div>
+      <div>
+      </div>
+    </div>
+    <!--If training session is yet to be completed-->
     <div *ngIf="resumeSubmit">
       <ul class="progressbar">
         <li class="active">Submit Resume</li>
@@ -7,7 +35,12 @@
         <li>Mock Interview</li>
         <li>Resume Approval</li>
       </ul>
+      <div>
+        <button (click)=onTraining()></button>
+      </div>
     </div>
+
+    <!--If mock interview is yet to be completed-->
     <div *ngIf="training">
       <ul class="progressbar">
         <li class="active">Submit Resume</li>
@@ -15,6 +48,10 @@
         <li>Mock Interview</li>
         <li>Resume Approval</li>
       </ul>
+      <div>
+        <button (click)=onMock()></button>
+      </div>
+      <!-- <h1>Mock interview needs to be taken</h1> -->
     </div>
     <div *ngIf="interview">
       <ul class="progressbar">
@@ -23,7 +60,13 @@
         <li class="active">Mock Interview</li>
         <li>Resume Approval</li>
       </ul>
+      <div>
+        <button (click)="onApproval()"></button>
+        <!-- <h1>Waiting for resume approval</h1> -->
+      </div>
     </div>
+
+    <!--If resume is yet to be approved-->
     <div *ngIf="resumeApproval">
       <ul class="progressbar">
         <li class="active">Submit Resume</li>
@@ -31,6 +74,7 @@
         <li class="active">Mock Interview</li>
         <li class="active">Resume Approval</li>
       </ul>
+      <!-- <h1>Congratulations.. all complete</h1> -->
     </div>
   </div>
 </body>
