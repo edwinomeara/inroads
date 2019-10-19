@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../shared/user';
 
+//var Sqlite = require('angular-sqlite');
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
