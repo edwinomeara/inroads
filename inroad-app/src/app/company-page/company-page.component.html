@@ -19,24 +19,33 @@
         
         <div class="container">
           <h2 class = "para">Select Candidate Information</h2>
-          <p>Pick GPA range (select from lists):</p>
           <form>
             <div class="form-group">
-              <label for="sel1">Select list (select one):</label>
+              <label class = "para" for="sel1">Select GPA range (select one):</label>
               <select class="form-control" id="sel1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+                <option>0-0.99</option>
+                <option>1-1.99</option>
+                <option>2-2.99</option>
+                <option>3-4.00</option> 
               </select>
               <br>
-              <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+              <label class = "para" for="sel2">Select majors (hold shift to select more than one):</label>
               <select multiple class="form-control" id="sel2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>Computer Science</option>
+                <option>Mechanical Engineering</option>
+                <option>English</option>
+                <option>Chemistry</option>
+                <option>Art</option>
+                <option>Psychology</option>
+              </select>
+              <label class = "para" for="sel2">Select School (hold shift to select more than one):</label>
+              <select multiple class="form-control" id="sel2">
+                <option>The Ohio State University</option>
+                <option>University of Michigan</option>
+                <option>Penn State</option>
+                <option>Harvard</option>
+                <option>University of Maryland</option>
+                <option>Cornell</option>
               </select>
             </div>
           </form>
