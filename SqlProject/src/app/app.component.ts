@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
 var Sqlite = require("nativescript-sqlite");
-
+// backend code
 @Component({
     selector: "my-app",
     templateUrl: "app.component.html",
@@ -9,6 +9,8 @@ export class AppComponent {
 
     private database: any;
     public people: Array<any>;
+
+    // app component backend code
 
     public constructor() {
         this.people = [];
@@ -23,6 +25,10 @@ export class AppComponent {
         });
     }
 
+    // more backend code
+
+    // insert method
+
     public insert() {
         this.database.execSQL("INSERT INTO people (firstname, lastname) VALUES (?, ?)", ["Nic", "Raboy"]).then(id => {
             console.log("INSERT RESULT", id);
@@ -31,7 +37,7 @@ export class AppComponent {
             console.log("INSERT ERROR", error);
         });
     }
-
+    // more backend code
     public fetch() {
         this.database.all("SELECT * FROM people").then(rows => {
             this.people = [];
@@ -45,5 +51,6 @@ export class AppComponent {
             console.log("SELECT ERROR", error);
         });
     }
+    // even more backend code
 
 }
