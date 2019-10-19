@@ -4,8 +4,8 @@
 </ActionBar>
 <StackLayout>
     <ListView [items]="people">
-        <template let-person="item">
+        <ng-template let-person="item">
             <Label text="{{ person.firstname }} {{ person.lastname }}"></Label>
-        </template>
+        </ng-template>
     </ListView>
 </StackLayout>
