@@ -32,6 +32,8 @@ export class HomeComponent implements OnInit {
     console.log(JSON.stringify(this.user)); // Here's the data in json
   }
 
+  onRegister() {}
+
   addSkill() {
     //check for duplicates before adding here
 

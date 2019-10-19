@@ -2,12 +2,8 @@
   <div class="form-group " style="margin-bottom: 0px;">
 
     <div class=" container"></div>
-    <!-- 
-    <div id="stars" style="border-radius: 100%"></div>
-    <div id="stars2" style="border-radius: 100%"></div>
-    <div id="stars3" style="border-radius: 100%"></div> -->
 
-    <div class="text ml-5 mr-5" data-text="Cover Letter Generator">Inroad</div>
+    <div class="text ml-5 mr-5" data-text="Cover Letter Generator">Inroads</div>
 
     <form class="input-form" #userForm="ngForm">
 
@@ -78,7 +74,10 @@
 
       <!-- Create Button -->
       <button type="submit" class="btn input-form-btn" [disabled]="!userForm.form.valid"
-        (click)="onSubmit()">Create</button>
+        (click)="onSubmit()">login</button>
+
+      <a routerLink="/splash" class="nav-link ">register</a>
+
     </form>
   </div>
 </section>
