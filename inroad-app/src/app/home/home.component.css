@@ -16,7 +16,7 @@
   text-transform: uppercase;
   font-size: 60px;
   text-align: center;
-  letter-spacing: 14px;
+  letter-spacing: 10px;
 }
 
 .ng-valid[required],
