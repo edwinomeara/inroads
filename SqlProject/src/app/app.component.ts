@@ -31,7 +31,7 @@ export class AppComponent {
             console.log("INSERT ERROR", error);
         });
     }
-
+    // more backend code
     public fetch() {
         this.database.all("SELECT * FROM people").then(rows => {
             this.people = [];
