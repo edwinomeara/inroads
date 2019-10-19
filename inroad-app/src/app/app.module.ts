@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { SplashComponent } from './splash/splash.component';
 import { AppRoutingModule } from './app-routing.module';
 import { StudentPageComponent } from './student-page/student-page.component';
+import { StudentRegistrationComponent } from './student-registration/student-registration.component';
+import { CompanyRegistrationComponent } from './company-registration/company-registration.component';
 
 // const appRoutes: Routes = [{
 //   path: 'splash',
@@ -15,7 +17,7 @@ import { StudentPageComponent } from './student-page/student-page.component';
 // }];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SplashComponent, StudentPageComponent],
+  declarations: [AppComponent, HomeComponent, SplashComponent, StudentPageComponent, StudentRegistrationComponent, CompanyRegistrationComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
