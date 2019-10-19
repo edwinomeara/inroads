@@ -1,1 +1,49 @@
 
+.body{
+    height: 900px;
+    background: linear-gradient(-45deg, #254d97, rgb(231, 191, 103));
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+    0% {
+      background-position: 0 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+.html{
+    height: 100%;
+}
+.student {
+    padding-top: 50px;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+.text {
+    background: transparent;
+    color: #fff;
+    margin: auto;
+    display: block;
+}
+button {
+    
+    margin: auto;
+    display: block;
+    border: 0;
+    color: #fff;
+    background-image: linear-gradient(rgb(214, 154, 25), rgb(231, 186, 89));
+    padding: 12px 24px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
