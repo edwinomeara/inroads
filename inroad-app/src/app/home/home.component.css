@@ -33,6 +33,7 @@
 section {
 
   /* height: 100%; */
+  height: 1000px;
   background: linear-gradient(-45deg, #254d97, rgb(231, 191, 103));
   padding: 40px 0;
   background-size: 400% 400%;
@@ -49,7 +50,7 @@ section {
 
   width: 100px;
   height: 10px;
-  background: #d53a9d;
+  background: #254d97;
   margin: 40px auto;
   outline: none;
 }
@@ -76,8 +77,6 @@ section {
   }
 }
 
-.registerButton {}
-
 .input-form-text {
 
   display: block;
@@ -93,7 +92,7 @@ section {
 }
 
 .input-form-text:focus {
-  box-shadow: 0 0 10px 4px #743ad5;
+  box-shadow: 0 0 10px 4px #254d97;
 }
 
 .input-form-btn {
