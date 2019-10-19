@@ -6,6 +6,7 @@ import { StudentPageComponent } from './student-page/student-page.component';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { CompanyRegistrationComponent } from './company-registration/company-registration.component';
 import { CompanyPageComponent } from './company-page/company-page.component';
+import { SchedulerComponent } from './scheduler/scheduler.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'companyRegistration',
     component: CompanyRegistrationComponent
+  },
+  {
+    path: 'scheduler',
+    component: SchedulerComponent
   }
 ];
 @NgModule({
