@@ -7,8 +7,7 @@ import { User } from '../shared/user';
   styleUrls: ['./student-registration.component.css']
 })
 export class StudentRegistrationComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   userName = '';
   passWord = '';
@@ -16,6 +15,7 @@ export class StudentRegistrationComponent implements OnInit {
   lname = '';
   grade = '';
   major = '';
+  gpa = '';
 
   duplicated = false;
   isEmpty = false;
@@ -51,11 +51,13 @@ export class StudentRegistrationComponent implements OnInit {
       this.isEmpty = true;
       return;
     }
+    if (this.userName == '') {
+      this.isEmpty = true;
+      return;
+    }
 
     this.submitted = true;
     console.log(JSON.stringify(this.user)); // Here's the data in json
   }
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

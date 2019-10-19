@@ -1,74 +1,81 @@
 <section>
-    <div class="form-group " style="margin-bottom: 0px;">
-  
-      <div class=" container"></div>
-  
-      <h1 class="header">Student Registration</h1>
-  
-      <form class="input-form" #userForm="ngForm">
-  
-  
-        <!-- UserName -->
-        <input type="text" class="input-form-text" id="UserName" required [(ngModel)]="user.userName" name="userName"
-          #userName="ngModel" placeholder="User Name">
-        <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
-          User name is required
-        </div>
-  
-  
-        <!-- Password -->
-        <input type="text" class="input-form-text" id="Password" required [(ngModel)]="user.password" name="passWord"
-          #passWord="ngModel" placeholder="Password">
-        <div [hidden]="passWord.valid || passWord.pristine" class="alert alert-danger">
-          Password is required
-        </div>
+  <div class="form-group " style="margin-bottom: 0px;">
 
-        <!-- First Name -->
-        <input type="text" class="input-form-text" id="FirstName" required [(ngModel)]="user.fname" name="fname"
-          #fname="ngModel" placeholder="First Name">
-        <div [hidden]="fname.valid || fname.pristine" class="alert alert-danger">
-          First Name is required
-        </div>
+    <div class=" container"></div>
 
-        <!-- Last Name -->
-        <input type="text" class="input-form-text" id="LastName" required [(ngModel)]="user.lname" name="lname"
-          #lname="ngModel" placeholder="Last Name">
-        <div [hidden]="lname.valid || lname.pristine" class="alert alert-danger">
-          Last Name is required
-        </div>
+    <button routerLink="/">home</button>
 
-        <!-- Grade -->
-        <input type="text" class="input-form-text" id="Grade" required [(ngModel)]="user.grade" name="grade"
-          #grade="ngModel" placeholder="Grade">
-        <div [hidden]="grade.valid || grade.pristine" class="alert alert-danger">
-          Grade is required
-        </div>
+    <h1 class="header">Student Registration</h1>
 
-        <!-- Major -->
-        <input type="text" class="input-form-text" id="Major" required [(ngModel)]="major.grade" name="major"
-          #major="ngModel" placeholder="Major">
-        <div [hidden]="major.valid || major.pristine" class="alert alert-danger">
-          Major is required
-        </div>
+    <form class="input-form" #userForm="ngForm">
 
-        <!-- School -->
-        <input type="text" class="input-form-text" id="School" required [(ngModel)]="school.grade" name="school"
-          #school="ngModel" placeholder="School">
-        <div [hidden]="school.valid || school.pristine" class="alert alert-danger">
-          School is required
-        </div>
 
-        <!-- Job Interest -->
-        <input type="text" class="input-form-text" id="Job" required [(ngModel)]="job.grade" name="job"
-          #job="ngModel" placeholder="Job Interest">
+      <!-- UserName -->
+      <input type="text" class="input-form-text" id="UserName" required [(ngModel)]="user.userName" name="userName"
+        #userName="ngModel" placeholder="User Name">
+      <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+        User name is required
+      </div>
 
-      
-  
-        <!-- save Button -->
-        <button type="submit" class="btn input-form-btn" [disabled]="!userForm.form.valid"
-          routerLink="/studentPage">Save</button>
-  
-      </form>
-    </div>
-  </section>
-  
+
+      <!-- Password -->
+      <input type="text" class="input-form-text" id="Password" required [(ngModel)]="user.password" name="passWord"
+        #passWord="ngModel" placeholder="Password">
+      <div [hidden]="passWord.valid || passWord.pristine" class="alert alert-danger">
+        Password is required
+      </div>
+
+      <!-- First Name -->
+      <input type="text" class="input-form-text" id="FirstName" required [(ngModel)]="user.fname" name="fname"
+        #fname="ngModel" placeholder="First Name">
+      <div [hidden]="fname.valid || fname.pristine" class="alert alert-danger">
+        First Name is required
+      </div>
+
+      <!-- Last Name -->
+      <input type="text" class="input-form-text" id="LastName" required [(ngModel)]="user.lname" name="lname"
+        #lname="ngModel" placeholder="Last Name">
+      <div [hidden]="lname.valid || lname.pristine" class="alert alert-danger">
+        Last Name is required
+      </div>
+
+      <!-- Grade -->
+      <input type="text" class="input-form-text" id="Grade" required [(ngModel)]="user.grade" name="grade"
+        #grade="ngModel" placeholder="Grade">
+      <div [hidden]="grade.valid || grade.pristine" class="alert alert-danger">
+        Grade is required
+      </div>
+
+      <!-- Major -->
+      <input type="text" class="input-form-text" id="Major" required [(ngModel)]="major.grade" name="major"
+        #major="ngModel" placeholder="Major">
+      <div [hidden]="major.valid || major.pristine" class="alert alert-danger">
+        Major is required
+      </div>
+
+      <!-- School -->
+      <input type="text" class="input-form-text" id="School" required [(ngModel)]="school.grade" name="school"
+        #school="ngModel" placeholder="School">
+      <div [hidden]="school.valid || school.pristine" class="alert alert-danger">
+        School is required
+      </div>
+
+      <input type="text" class="input-form-text" id="gpa" required [(ngModel)]="school.gpa" name="gpa" #gpa="ngModel"
+        placeholder="GPA">
+      <div [hidden]="school.valid || school.pristine" class="alert alert-danger">
+        GPA is required
+      </div>
+
+      <!-- Job Interest -->
+      <input type="text" class="input-form-text" id="Job" required [(ngModel)]="job.grade" name="job" #job="ngModel"
+        placeholder="Job Interest">
+
+
+
+      <!-- save Button -->
+      <button type="submit" class="btn input-form-btn" [disabled]="!userForm.form.valid"
+        routerLink="/studentPage">Save</button>
+
+    </form>
+  </div>
+</section>

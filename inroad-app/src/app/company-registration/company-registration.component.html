@@ -1,61 +1,61 @@
-
 <section>
-    <div class="form-group " style="margin-bottom: 0px;">
-  
-      <div class=" container"></div>
-  
-      <h1 class="header">Company Registration</h1>
-  
-      <form class="input-form" #userForm="ngForm">
-  
-  
-        <!-- UserName -->
-        <input type="text" class="input-form-text" id="UserName" required [(ngModel)]="user.userName" name="userName"
-          #userName="ngModel" placeholder="User Name">
-        <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
-          User name is required
-        </div>
-  
-  
-        <!-- Password -->
-        <input type="text" class="input-form-text" id="Password" required [(ngModel)]="user.password" name="passWord"
-          #passWord="ngModel" placeholder="Password">
-        <div [hidden]="passWord.valid || passWord.pristine" class="alert alert-danger">
-          Password is required
-        </div>
+  <div class="form-group " style="margin-bottom: 0px;">
 
-        <!-- Company Name -->
-        <input type="text" class="input-form-text" id="CompanyName" required [(ngModel)]="user.cname" name="cname"
-          #cname="ngModel" placeholder="Company Name">
-        <div [hidden]="cname.valid || cname.pristine" class="alert alert-danger">
-          Company Name is required
-        </div>
+    <div class=" container"></div>
 
-        <!-- Grade -->
-        <input type="text" class="input-form-text" id="Grade" required [(ngModel)]="user.grade" name="grade"
-          #grade="ngModel" placeholder="Grade">
-        <div [hidden]="grade.valid || grade.pristine" class="alert alert-danger">
-          Interested grades is required
-        </div>
+    <h1 class="header">Company Registration</h1>
 
-        <!-- Major -->
-        <input type="text" class="input-form-text" id="Major" required [(ngModel)]="major.grade" name="major"
-          #major="ngModel" placeholder="Major">
-        <div [hidden]="major.valid || major.pristine" class="alert alert-danger">
-          Interested majors is required
-        </div>
+    <form class="input-form" #userForm="ngForm">
 
-        <!-- Job Interest -->
-        <input type="text" class="input-form-text" id="Job" required [(ngModel)]="job.grade" name="job"
-          #job="ngModel" placeholder="Type of Job Interest">
+      <button routerLink="/">home</button>
 
-      
-  
-        <!-- save Button -->
-        <button type="submit" class="btn input-form-btn" [disabled]="!userForm.form.valid"
-          routerLink="/companyPage">Save</button>
-  
-      </form>
-    </div>
-  </section>
-  
+
+      <!-- UserName -->
+      <input type="text" class="input-form-text" id="UserName" required [(ngModel)]="user.userName" name="userName"
+        #userName="ngModel" placeholder="User Name">
+      <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+        User name is required
+      </div>
+
+
+      <!-- Password -->
+      <input type="text" class="input-form-text" id="Password" required [(ngModel)]="user.password" name="passWord"
+        #passWord="ngModel" placeholder="Password">
+      <div [hidden]="passWord.valid || passWord.pristine" class="alert alert-danger">
+        Password is required
+      </div>
+
+      <!-- Company Name -->
+      <input type="text" class="input-form-text" id="CompanyName" required [(ngModel)]="user.cname" name="cname"
+        #cname="ngModel" placeholder="Company Name">
+      <div [hidden]="cname.valid || cname.pristine" class="alert alert-danger">
+        Company Name is required
+      </div>
+
+      <!-- Grade -->
+      <input type="text" class="input-form-text" id="Grade" required [(ngModel)]="user.grade" name="grade"
+        #grade="ngModel" placeholder="Grade">
+      <div [hidden]="grade.valid || grade.pristine" class="alert alert-danger">
+        Interested grades is required
+      </div>
+
+      <!-- Major -->
+      <input type="text" class="input-form-text" id="Major" required [(ngModel)]="major.grade" name="major"
+        #major="ngModel" placeholder="Major">
+      <div [hidden]="major.valid || major.pristine" class="alert alert-danger">
+        Interested majors is required
+      </div>
+
+      <!-- Job Interest -->
+      <input type="text" class="input-form-text" id="Job" required [(ngModel)]="job.grade" name="job" #job="ngModel"
+        placeholder="Type of Job Interest">
+
+
+
+      <!-- save Button -->
+      <button type="submit" class="btn input-form-btn" [disabled]="!userForm.form.valid"
+        routerLink="/companyPage">Save</button>
+
+    </form>
+  </div>
+</section>
