@@ -51,6 +51,8 @@ export class AppComponent {
                 });
             }
         }, error => {
+
+            // console.log
             console.log("SELECT ERROR", error);
         });
     }
