@@ -30,7 +30,7 @@ export class StudentPageComponent implements OnInit {
 
   onMock() {
     this.interview = true;
-    this.resumeSubmit = false;
+    this.training = false;
   }
 
   onApproval() {

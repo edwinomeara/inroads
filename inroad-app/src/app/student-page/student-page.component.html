@@ -4,6 +4,7 @@
   <!--If the user has not completed anything-->
   <div class="container">
     <div *ngIf="isNew">
+
       <ul class="progressbar">
         <li>Upload Resume</li>
         <li>Training Session</li>
@@ -14,11 +15,12 @@
       <div>
         <div class="form-group">
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Add Comments</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea1" style="padding-top: 50px;">Add Comments</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              style="padding-top: 50px;"></textarea>
           </div>
           <div>
-            <label for="file">Choose File</label>
+            <label for="file" style="padding-top: 20px;">Choose File</label>
           </div>
           <input type="file" id="file">
         </div>
@@ -36,7 +38,7 @@
         <li>Resume Approval</li>
       </ul>
       <div>
-        <button (click)=onTraining()></button>
+        <button (click)=onTraining()>Training Complete</button>
       </div>
     </div>
 
@@ -49,9 +51,8 @@
         <li>Resume Approval</li>
       </ul>
       <div>
-        <button (click)=onMock()></button>
+        <button (click)=onMock()>Mock Interview Complete</button>
       </div>
-      <!-- <h1>Mock interview needs to be taken</h1> -->
     </div>
     <div *ngIf="interview">
       <ul class="progressbar">
@@ -61,8 +62,7 @@
         <li>Resume Approval</li>
       </ul>
       <div>
-        <button (click)="onApproval()"></button>
-        <!-- <h1>Waiting for resume approval</h1> -->
+        <button (click)="onApproval()">Resume Approved</button>
       </div>
     </div>
 

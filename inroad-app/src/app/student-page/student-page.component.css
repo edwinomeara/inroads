@@ -5,6 +5,7 @@
 
 .progressbar {
   counter-reset: step;
+  padding-top: 70px;
 }
 
 .progressbar li {
@@ -21,12 +22,13 @@
   width: 30px;
   height: 30px;
   line-height: 30px;
-  border: 1px solid #ddd;
+
   display: block;
   text-align: center;
   margin: 0 auto 10px auto;
   border-radius: 50%;
   background-color: white;
+  border: 1px solid #ddd;
 }
 
 .progressbar li:after {
