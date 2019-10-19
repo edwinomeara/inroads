@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { SplashComponent } from './splash/splash.component';
 import { HomeComponent } from './home/home.component';
 import { StudentPageComponent } from './student-page/student-page.component';
+import { StudentRegistrationComponent } from './student-registration/student-registration.component';
+import { CompanyRegistrationComponent } from './company-registration/company-registration.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'studentPage',
     component: StudentPageComponent
+  },
+  {
+    path: 'studentRegistration',
+    component: StudentRegistrationComponent
+  },
+  {
+    path: 'companyRegistration',
+    component: CompanyRegistrationComponent
   }
 ];
 @NgModule({

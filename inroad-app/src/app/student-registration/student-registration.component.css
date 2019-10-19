@@ -1,0 +1,112 @@
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
+.header{
+    text-align: center;
+    color: #ddd;
+}
+.text {
+
+    background: transparent;
+    color: #fff;
+    border-style: solid;
+  
+    border-image: linear-gradient(45deg, #254d97, rgb(231, 191, 103));
+    border-image-slice: 1;
+    border-width: 5px;
+  
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 14px;
+  }
+  
+  .ng-valid[required],
+  .ng-valid.required {
+    border-left: 5px solid #42a948;
+    /* green */
+  }
+  
+  .ng-invalid:not(form) {
+    border-left: 5px solid #a94442;
+    /* red */
+  }
+  
+  section {
+  
+    /* height: 100%; */
+    height: 2000px;
+    background: linear-gradient(-45deg, #254d97, rgb(231, 191, 103));
+    padding: 40px 0;
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+    /* position: relative; */
+  }
+  
+  .form-section h1 {
+    text-align: center;
+    color: #ddd;
+  }
+  
+  .border {
+  
+    width: 100px;
+    height: 10px;
+    background: #254d97;
+    margin: 40px auto;
+    outline: none;
+  }
+  
+  .input-form {
+  
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  
+  }
+  
+  @keyframes change {
+    0% {
+      background-position: 0 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+  .input-form-text {
+  
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: white;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    transition: 0.5s;
+  }
+  
+  .input-form-text:focus {
+    box-shadow: 0 0 10px 4px #254d97;
+  }
+  
+  .input-form-btn {
+    float: right;
+    border: 0;
+    background: white;
+    color: black;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
