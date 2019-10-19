@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { StudentPageComponent } from './student-page/student-page.component';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { CompanyRegistrationComponent } from './company-registration/company-registration.component';
+import { CompanyPageComponent } from './company-page/company-page.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'studentPage',
     component: StudentPageComponent
+  },
+  {
+    path: 'companyPage',
+    component: CompanyPageComponent
   },
   {
     path: 'studentRegistration',
