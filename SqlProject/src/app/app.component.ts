@@ -40,7 +40,7 @@ export class AppComponent {
     // more backend code
 
 
-    // fetch command
+    // fetch command  
     public fetch() {
         this.database.all("SELECT * FROM people").then(rows => {
             this.people = [];
