@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 
 import { SplashComponent } from './splash/splash.component';
 import { AppRoutingModule } from './app-routing.module';
+import { StudentPageComponent } from './student-page/student-page.component';
 
 // const appRoutes: Routes = [{
 //   path: 'splash',
@@ -14,7 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 // }];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SplashComponent],
+  declarations: [AppComponent, HomeComponent, SplashComponent, StudentPageComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
