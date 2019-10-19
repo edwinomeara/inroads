@@ -14,6 +14,8 @@ const routes: Routes = [
     { path: "item/:id", component: ItemDetailComponent }
 ];
 
+
+// ng_module
 @NgModule({
     imports: [NativeScriptRouterModule.forRoot(routes)],
     exports: [NativeScriptRouterModule]
