@@ -5,7 +5,7 @@
 
     <button routerLink="/">home</button>
 
-    <h1 class="header">Student Registration</h1>
+    <h1 class="header">Student Application</h1>
 
     <form class="input-form" #userForm="ngForm">
 
@@ -73,8 +73,7 @@
 
 
       <!-- save Button -->
-      <button type="submit" class="btn input-form-btn" [disabled]="!userForm.form.valid"
-        routerLink="/studentPage">Save</button>
+      <button type="submit" class="btn input-form-btn" [disabled]="!userForm.form.valid" routerLink="/">Save</button>
 
     </form>
   </div>
