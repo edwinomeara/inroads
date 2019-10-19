@@ -27,6 +27,8 @@ export class AppComponent {
 
     // more backend code
 
+    // insert method
+
     public insert() {
         this.database.execSQL("INSERT INTO people (firstname, lastname) VALUES (?, ?)", ["Nic", "Raboy"]).then(id => {
             console.log("INSERT RESULT", id);
