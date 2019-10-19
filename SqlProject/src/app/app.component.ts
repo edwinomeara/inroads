@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
 var Sqlite = require("nativescript-sqlite");
-
+// backend code
 @Component({
     selector: "my-app",
     templateUrl: "app.component.html",
