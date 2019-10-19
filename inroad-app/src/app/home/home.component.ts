@@ -34,14 +34,6 @@ export class HomeComponent implements OnInit {
       this.bill = true;
     }
 
-    if (this.bill) {
-      this.router.navigate(['/blog']);
-    }
-
-    console.log(this.user.userName);
-
-    console.log(this.bill);
-
     if (this.userName == '') {
       this.isEmpty = true;
       return;
