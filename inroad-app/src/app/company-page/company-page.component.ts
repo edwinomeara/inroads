@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./company-page.component.css']
 })
 export class CompanyPageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  public gpa = '';
 
-  ngOnInit() {
+  onFilter() {
+    console.log(this.gpa);
   }
 
+  setGpa(gpa) {
+    this.gpa = gpa;
+    console.log(this.gpa);
+  }
+
+  ngOnInit() {}
 }

@@ -3,7 +3,6 @@ import { User } from '../shared/user';
 
 //var Sqlite = require('angular-sqlite');
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,6 +14,8 @@ export class HomeComponent implements OnInit {
   userName = '';
   passWord = '';
 
+  bill = false;
+
   duplicated = false;
   isEmpty = false;
 
@@ -22,9 +23,25 @@ export class HomeComponent implements OnInit {
 
   user = new User('', '');
 
-  submitted = false;
+  checkIfBill() {
+    if (this.user.userName == 'bill') {
+      this.bill = true;
+    }
+  }
 
   onSubmit() {
+    if (this.user.userName == 'bill') {
+      this.bill = true;
+    }
+
+    if (this.bill) {
+      this.router.navigate(['/blog']);
+    }
+
+    console.log(this.user.userName);
+
+    console.log(this.bill);
+
     if (this.userName == '') {
       this.isEmpty = true;
       return;
@@ -35,7 +52,6 @@ export class HomeComponent implements OnInit {
       return;
     }
 
-    this.submitted = true;
     console.log(JSON.stringify(this.user)); // Here's the data in json
   }
 

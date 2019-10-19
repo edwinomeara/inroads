@@ -15,19 +15,24 @@
         User name is required
       </div>
 
-
       <!-- Password -->
       <input type="text" class="input-form-text" id="Password" required [(ngModel)]="user.password" name="passWord"
-        #passWord="ngModel" placeholder="Password">
+        #passWord="ngModel" placeholder="Password" (click)="checkIfBill()">
       <div [hidden]="passWord.valid || passWord.pristine" class="alert alert-danger">
         Password is required
       </div>
 
-      <!-- login Button -->
-      <button type="submit" class="btn input-form-btn" [disabled]="!userForm.form.valid"
-        routerLink="/studentPage">Login</button>
+      <div *ngIf='bill'>
+        <button type="button" class="btn input-form-btn" (click)="onSubmit()" [disabled]="!userForm.form.valid"
+          routerLink="/companyPage"> Login </button> <!-- registration button -->
+      </div>
 
-      <!-- registration button -->
+      <!-- login Button -->
+      <div *ngIf="!bill">
+        <button type="button" class="btn input-form-btn" (click)="onSubmit()" [disabled]="!userForm.form.valid"
+          routerLink="/studentPage"> Login
+        </button> <!-- registration button -->
+      </div>
       <button type="submit" class="btn registerButton" style="color:white" routerLink="/splash">Register Here</button>
 
     </form>
