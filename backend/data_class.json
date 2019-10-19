@@ -7,7 +7,9 @@
      "grade" : "Junior", 
     "major" : "Computer Science", 
     "job interest type" : "Internship",
-    "school" : "University of Michigan"},
+    "school" : "University of Michigan",
+    "location city" : "Ann Arbor",
+    "location state" : "Michigan"},
     {"username": "JaneDoe", 
      "password": "123", 
      "status": "0", 
@@ -16,5 +18,7 @@
      "grade" : "Senior",
      "major" : "Computer Science", 
      "job interest type" : "Full Time",
-     "school" : "Ohio State University"}
+     "school" : "Ohio State University",
+     "location city" : "Columbus",
+     "location state" : "Ohio"}
 ]
