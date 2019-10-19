@@ -10,6 +10,8 @@ export class AppComponent {
     private database: any;
     public people: Array<any>;
 
+    // app component backend code
+
     public constructor() {
         this.people = [];
         (new Sqlite("my.db")).then(db => {
